@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-card {
+  @apply bg-white shadow py-4 px-5 w-80 md:w-96 rounded-lg text-gray-700;
+}
+
+.header-content {
+  @apply flex gap-1 mb-2;
+}
+
+.header-svg {
+  @apply w-6 h-6;
+}
+
+.header-title {
+  @apply text-xl font-bold;
+}
+
+.main {
+  @apply w-80 md:w-96 overflow-auto;
+}
+
+.main-title {
+  @apply text-gray-700 text-lg font-medium mb-2;
+}
+
+.parent-div {
+  @apply container p-5 flex flex-col items-center gap-5 font-mono;
+}
+
+.invalid-input {
+  @apply text-red-500 text-xs font-thin mt-2;
+}
+
+.no-todos {
+  @apply border-b border-red-500 text-red-500 text-sm text-center py-2;
+}
+
+.todos-main-container {
+  @apply flex flex-col gap-5 text-gray-700;
+}
+
+.todos-container {
+  @apply flex justify-between border-b border-gray-400 py-1;
+}
+
+.todos-text-container {
+  @apply flex flex-col;
+}
+
+.todo-date {
+  @apply text-xs text-gray-400;
+}
+
+.todo-desc {
+  @apply text-base text-gray-700;
+}
+
+.common-btn-container {
+  @apply flex items-center gap-1 px-1;
+}
+
+.common-btn-svg {
+  @apply w-4 h-4;
+}
+
+.my-input {
+  @apply bg-gray-100 py-1 px-2 text-sm placeholder-gray-400 text-gray-700 rounded-l-md flex-1 focus:outline-none focus:ring-1 focus:ring-purple-300;
+}
+
+.btn-add {
+  @apply bg-purple-600 py-2 px-3 text-gray-50 text-xs font-bold rounded-r-md hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-300;
+}
+
+.btn-common {
+  @apply bg-gray-300 py-2 px-2 text-gray-500 text-xs font-bold rounded-full hover:bg-gray-400 hover:text-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-500;
+}
